@@ -1,0 +1,41 @@
+@keyframes fly{
+	0%{transform:scale(1) rotate(0deg);}
+	100%{transform:scale(1) rotate(360deg);}
+}@-ms-keyframes fly{
+	0%{-ms-transform:scale(1) rotate(0deg);}
+	100%{-ms-transform:scale(1) rotate(360deg);}
+}@-moz-keyframes fly{
+	0%{-moz-transform:scale(1) rotate(0deg);}
+	100%{-moz-transform:scale(1) rotate(360deg);}
+}@-webkit-keyframes fly{
+	0%{-webkit-transform:scale(1) rotate(0deg);}
+	100%{-webkit-transform:scale(1) rotate(360deg);}
+}@-o-keyframes fly{
+	0%{-o-transform:scale(1) rotate(0deg);}
+	100%{-o-transform:scale(1) rotate(360deg);}
+}
+#earth{
+	animation: fly 13s linear infinite normal 1s;
+	-ms-animation: fly 13s linear infinite normal 1s;
+	-moz-animation: fly 13s linear infinite normal 1s;
+	-webkit-animation: fly 13s linear infinite normal 1s;
+	-o-animation: fly 13s linear infinite normal 1s;
+	position:relative;
+	width:220px;
+	z-index: 20;
+	top: 170px;
+	left:43px;
+}
+
+#moon{
+	animation: fly 5s linear infinite normal 1s;
+	-ms-animation: fly 5s linear infinite normal 1s;
+	-moz-animation: fly 5s linear infinite normal 1s;
+	-webkit-animation: fly 5s linear infinite normal 1s;
+	-o-animation: fly 5s linear infinite normal 1s;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+	z-index: 90;
+}
+

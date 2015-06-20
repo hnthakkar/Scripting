@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>4</title>
+<link href="4_css/4.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+  function selectIcon(icon)
+  {
+	var newIcon=document.getElementById(icon);
+	var optionDiv=document.getElementById("optionsdiv");
+	var selectDiv=document.getElementById("selecteddiv");
+	selectDiv.appendChild(newIcon);
+	optionDiv.removeChild(newIcon);
+  }
+</script>
+</head>
+<body>
+	<div class="iconDiv" id="optionsdiv">
+		<img src="4_images/1.png" width="180" height="85" alt="facebook" id="facebook" onclick="selectIcon('facebook');"/>
+		<img src="4_images/2.png" width="180" height="85" alt="microsoft" id="microsoft" onclick="selectIcon('microsoft');"/>
+		<img src="4_images/3.png" width="180" height="85" alt="nextjump" id="nextjump" onclick="selectIcon('nextjump');"/>
+		<img src="4_images/4.png" width="180" height="85" alt="ooyala" id="ooyala" onclick="selectIcon('ooyala');"/>
+		<img src="4_images/5.png" width="180" height="85" alt="palantir" id="palantir" onclick="selectIcon('palantir');"/>
+	</div>
+	<div class="iconDiv" id="selecteddiv" style="margin-top:20px;"></div>
+	<div id="resetdiv">
+		<button onclick="window.location.reload()" value="Reset" id="resetButton">Reset</button>
+	</div>
+	<footer class="footer">
+		<small>&#169; Copyright This belongs to SCE505</small>
+	</footer>
+</body>
+</html>

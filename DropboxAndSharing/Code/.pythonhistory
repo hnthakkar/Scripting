@@ -1,0 +1,21 @@
+rows = db(db.auth_user).select()
+print rows
+db.comments.drop()
+db.tables()
+db.comments.drop()
+row = db(db.commemts).select()
+db.tables()
+row = db(db.comments).select()
+print row
+db.comments.drop()
+db.commit()
+db.tables()
+rows = db(db.comments).select()
+print rows
+db.comments.drop()
+db.commit()
+rows = db(db.comments).select()
+print rows
+db.comments.drop()
+db.commit()
+rows = db(db.comments).select()

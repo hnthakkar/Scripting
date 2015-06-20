@@ -1,0 +1,19 @@
+#!/usr/bin/awk -f
+{
+   temp1 = 0
+   temp2 = 1
+  
+ for ( i = 0 ; i < $0 ; i++ )
+   {
+      if ( i <= 1 )
+         newTemp = i;
+      else
+      {
+         newTemp = temp1 + temp2;
+         temp1 = temp2;
+         temp2 = newTemp;
+      }
+   }
+print newTemp
+
+}

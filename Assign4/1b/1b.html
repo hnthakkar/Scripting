@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>1a</title>
+<style type="text/css">
+body{background-color:black;text-align:center;width:900px;margin-left:20%;margin-top:10%;}
+legend, footer,span{color:white}
+input{font-size: 16px;}
+.table {width:900px;border:solid 1px black;color:#FFF;}
+.table ul {float: left;list-style: none;padding-left: 0px;}
+.table ul li {width: 75px;text-align: center;margin: auto;color:white;padding:10px;}
+</style>
+<script>
+	function validate() {
+		var uname = document.getElementById("uname").value;
+		var password = document.getElementById("password").value;
+		var pattern = /^(?=.{5,8})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[\W]).*$/;
+		if ((uname.length == 0) || (uname == null) || uname == undefined) {
+			document.getElementById("uname-error-msg").innerHTML = "username cannot be empty";
+			return false;
+		}
+		if (password.length == 0) {
+			document.getElementById("password-error-msg").innerHTML = "password cannot be empty";
+			return false;
+		} else if (false == pattern.test(password)) {
+			document.getElementById("password-error-msg").innerHTML = "Password didn't match the format";
+			return false;
+		}
+    }
+</script>
+</head>
+<body>
+	<fieldset>
+		<legend>LOGIN</legend>
+		<form onsubmit="return validate();">
+			<div class="table">
+					<dl>
+					    <dt>Username<font color="red">*</font> : <input id="uname" type="text"></dt>
+					    <dt><span id="uname-error-msg" style="float:center;"></span></dt>
+					</dl>
+					<dl>
+					    <dt>Password<font color="red">*</font> : <input id="password" type="password"></dt>
+					    <dt> <span id="password-error-msg"></span></dt>
+					</dl>
+					<dl><dt><input type="submit"  value="Submit"></dt></dl>
+	        </div>
+		</form>
+	</fieldset>
+	<footer>
+		<small>&#169; Copyright This belongs to SCE505</small>
+	</footer>
+</body>
+</html>

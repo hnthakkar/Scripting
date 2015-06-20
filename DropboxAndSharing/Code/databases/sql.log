@@ -1,0 +1,149 @@
+timestamp: 2014-11-18T21:49:39.919239
+CREATE TABLE auth_user(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name CHAR(128),
+    last_name CHAR(128),
+    email CHAR(512),
+    password CHAR(512),
+    registration_key CHAR(512),
+    reset_password_key CHAR(512),
+    registration_id CHAR(512)
+);
+success!
+timestamp: 2014-11-18T21:49:40.065923
+CREATE TABLE auth_group(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    role CHAR(512),
+    description TEXT
+);
+success!
+timestamp: 2014-11-18T21:49:40.168229
+CREATE TABLE auth_membership(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    group_id INTEGER REFERENCES auth_group (id) ON DELETE CASCADE
+);
+success!
+timestamp: 2014-11-18T21:49:40.314040
+CREATE TABLE auth_permission(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    group_id INTEGER REFERENCES auth_group (id) ON DELETE CASCADE,
+    name CHAR(512),
+    table_name CHAR(512),
+    record_id INTEGER
+);
+success!
+timestamp: 2014-11-18T21:49:40.447167
+CREATE TABLE auth_event(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    time_stamp TIMESTAMP,
+    client_ip CHAR(512),
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    origin CHAR(512),
+    description TEXT
+);
+success!
+timestamp: 2014-11-18T21:49:40.592288
+CREATE TABLE auth_cas(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    created_on TIMESTAMP,
+    service CHAR(512),
+    ticket CHAR(512),
+    renew CHAR(1)
+);
+success!
+timestamp: 2014-11-18T21:49:40.715818
+CREATE TABLE alluploads(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    filename CHAR(512),
+    uploadfile CHAR(512),
+    description TEXT,
+    datecreated TIMESTAMP,
+    datemodified TIMESTAMP,
+    uploadedBy INTEGER REFERENCES auth_user (id) ON DELETE CASCADE
+);
+success!
+timestamp: 2014-11-18T21:49:40.827470
+CREATE TABLE sharedFiles(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    fileID INTEGER REFERENCES alluploads (id) ON DELETE CASCADE,
+    sharedWith INTEGER REFERENCES auth_user (id) ON DELETE CASCADE
+);
+success!
+timestamp: 2014-11-18T21:49:40.939314
+CREATE TABLE bookmark(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    fileID INTEGER REFERENCES alluploads (id) ON DELETE CASCADE,
+    userID INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    bookmarkdate TIMESTAMP
+);
+success!
+timestamp: 2014-11-18T21:49:41.062533
+CREATE TABLE comments(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    fileID INTEGER REFERENCES alluploads (id) ON DELETE CASCADE,
+    userID INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    body TEXT,
+    commentdate TIMESTAMP
+);
+success!
+DROP TABLE comments;
+success!
+timestamp: 2014-11-18T23:27:56.155787
+CREATE TABLE comments(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    fileID INTEGER REFERENCES alluploads (id) ON DELETE CASCADE,
+    userID INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    body TEXT,
+    commentdate TIMESTAMP
+);
+success!
+DROP TABLE comments;
+success!
+timestamp: 2014-11-18T23:31:35.390945
+CREATE TABLE comments(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    fileID INTEGER REFERENCES alluploads (id) ON DELETE CASCADE,
+    userID INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    body TEXT,
+    commentdate TIMESTAMP
+);
+success!
+DROP TABLE comments;
+success!
+timestamp: 2014-11-18T23:38:32.869039
+CREATE TABLE comments(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    fileID INTEGER REFERENCES alluploads (id) ON DELETE CASCADE,
+    userID INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    body TEXT,
+    commentdate TIMESTAMP
+);
+success!
+DROP TABLE comments;
+success!
+timestamp: 2014-11-18T23:42:08.500205
+CREATE TABLE comments(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    fileID INTEGER REFERENCES alluploads (id) ON DELETE CASCADE,
+    userID INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    body TEXT,
+    commentdate TIMESTAMP
+);
+success!
+DROP TABLE comments;
+success!
+timestamp: 2014-11-18T23:43:57.260254
+CREATE TABLE comments(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    fileID INTEGER REFERENCES alluploads (id) ON DELETE CASCADE,
+    userID INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    body TEXT,
+    is_active CHAR(1),
+    created_on TIMESTAMP,
+    created_by INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    modified_on TIMESTAMP,
+    modified_by INTEGER REFERENCES auth_user (id) ON DELETE CASCADE
+);
+success!

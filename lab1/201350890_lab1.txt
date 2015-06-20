@@ -1,0 +1,24 @@
+1. touch 1a.txt 1b.txt
+    cat >> 1a.txt
+    cat >> 1b.txt
+    cat 1a.txt >> 1c.txt
+    cat 1b.txt >> 1c.txt
+2. touch 2a.txt
+    for i in {1..20}; do
+     echo $i >> 2a.txt
+     done
+     tail -14 2a.txt | head -9 >> 2b.txt
+3. split -10 2a.txt
+4. ls -ltr | tail -5 | cut -f5,6,7,8,9,10,11,12 -d ' ' >> 4a.txt
+5. cat 4a.txt | wc -lwm
+6. sort -nr 2a.txt
+7. cat 2a.txt | tr '\n' ' ' >> 7a.txt
+8. ls -ltr | tail -5 | tee 8a.txt
+9. cat 2a.txt doesnotExist.txt > output.txt 2> error.txt
+10. find . -type f | wc -l
+11. find /home -type f -mmin
+12. ls *[0-9].*
+13. ls -l I love Scripting 2>/dev/null 
+14. ls ???*.*
+   find . -type d -not -name '*[0-9]*' 
+

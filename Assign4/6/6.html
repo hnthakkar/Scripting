@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+	<link href="6_css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body bg>
+    <div id="earth"><span><img src="6_images/Canvas_earth.png"/><span id="moon"><img src="6_images/Canvas_moon.png"></span></div>
+	<canvas style="background-image:url('6_images/Canvas_sun.png');background-repeat: no-repeat;" id="myCanvas" width="700" height="700">
+	  	
+	</canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+	  var centerX = 150;
+      var centerY = 150;
+      var radius = 100;
+	  context.beginPath();
+      context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+	  context.lineWidth = 1;
+      context.strokeStyle = 'lightblue';
+      context.stroke();
+	</script>
+  </body>
+</html>      

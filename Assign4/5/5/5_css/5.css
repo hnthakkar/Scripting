@@ -1,0 +1,131 @@
+@charset "utf-8";
+html{
+	background-color:#CCC;
+}
+
+body{
+	border: solid 1px #999;
+	width: 80%;
+	margin: 0 auto;
+	background-color:#666;
+}
+
+#updateStatus {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 10px;
+	text-align:right;
+}
+
+#statusBar{
+	background: -webkit-linear-gradient(#000, #999); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(#000, #999); /* For Opera 11.1 to 12.0 */
+ 	background: -moz-linear-gradient(#000, #999); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(#000, #999); /* Standard syntax */
+	color: white;
+	text-align:center;
+	padding: 5px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:18px;
+	word-break: break-all;
+	
+}
+#statusBox{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	width:100%;
+	height: 70px;
+	box-sizing:border-box;
+    -moz-box-sizing:border-box;
+	border:solid 1px #000;
+	text-align:left;
+	word-break: break-all;
+}
+
+
+.statusblock{
+	border:solid 1px #000;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	width:90%;
+	margin: 0 auto;
+	margin-top: 10px;
+	background-color:#FFF;
+	padding:2px;
+	word-break: break-all;
+	
+}
+
+.statusblock img{ 
+	width: 80px;
+	height: 80px;
+	float: left;
+	display:block;
+	border: solid thin black;			
+}
+
+.statusblock p{
+	font-size:14px;
+	margin-left:10px;
+	word-break: break-all;
+}
+
+.statusblock h1{
+	font-size:18px;
+	margin-left:10px;
+	color:#06C;
+	word-break: break-all;
+	
+}
+
+.statusblock h3{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	font-weight:normal;
+	clear:both;
+	margin-left:90px;
+	margin-top:10px;
+	word-break: break-all;
+}
+
+.comment-link{
+	font-size:14px;
+	margin-left: 90px;
+	
+}
+
+.comment-area{
+	width: 80%
+
+}
+
+.comment-box{
+	clear:both;
+	box-sizing:border-box;
+    -moz-box-sizing:border-box;
+	display: block;
+	margin-left:90px;
+	width: 88.5%;
+}
+.comment{
+	font-size:16px;
+	color:#06C;
+	margin-left:90px;
+	border: solid thin #CCC;
+	word-break: break-all;
+	padding-right:20px;
+	margin-bottom:10px;
+}
+
+.like-link{
+	font-size:14px;
+	margin: 10px;
+}
+
+.like-count{ 
+	font-size:12px;
+	margin: 5px;
+	border-radius:100%;		
+	text-align: center;
+}

@@ -1,0 +1,18 @@
+﻿1.a: grep [0-9] que1_file
+1.b: grep “abc.txt” que1_file
+1.c: grep “\$HOME'myhome\\$” que1_file
+1.d: grep [[:punct:]] que1_file -v
+1.e: grep -w “abc*” que1_file -v
+1.f: grep “end\$$” que1_file
+1.g: grep ^[^2] que1_file 
+1.h.grep -e "hey" -e "hello" que1_file
+1.i.egrep "^l(o){1,2}(k|(s)|(ing)|(ed))" que1_file
+1.j.egrep "(^19)([0-9])([0-9]$)|(^20)([0-9])([0-9]$)" que1_file 
+2.egrep -i "*ag{1,2}((ar|ra))(wal)$" studentnames | cut -d' ' -f1
+3.a.ls -l | grep "^d"
+3.b.ls -l|grep "^-...rw-"
+4.echo AB98 |awk '{if(length($0)==3) print $0 }' | egrep '^([A-Z]|[0-9]|a)[x,z]$'
+5.echo hiiamthellonumber6|awk '{if((length($0)>=15)&&(length($0)<=30)) print $0 }' | egrep '^.{6}hello'
+6.echo hahahahahoho | egrep -w '(h[a,o]){5,}'
+7.egrep -x '([+,-]?)([0-9]*\.?[0-9]+)' realnumber.txt
+8.egrep '^([0-9a-z]+(([.,_,-]?)[a-z0-9]+)*)@([0-9a-z]+(([.,-]?)[a-z0-9]+)*)\.[a-z]+' email

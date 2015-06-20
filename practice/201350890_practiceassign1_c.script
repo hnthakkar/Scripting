@@ -1,0 +1,191 @@
+Script started on Wednesday 20 August 2014 02:16:13 PM IST
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ touch my[K[KMyInfo.txt
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ chmod 644 MyInfo.txt 
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ touch Runi[KIt.txt
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ chmod 140 RunIt.txt 
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ ls -l
+total 56
+-rw-rw-r-- 1 hemal hemal  7621 Aug 20 12:01 201350890_practiceassign1_a.script
+-rw-rw-r-- 1 hemal hemal   315 Aug 20 13:00 201350890_practiceassign1_a.txt
+-rw-rw-r-- 1 hemal hemal   251 Aug 20 11:57 201350890_practiceassign1_a.txt~
+-rw-rw-r-- 1 hemal hemal 18574 Aug 20 14:13 201350890_practiceassign1_b.script
+-rw-rw-r-- 1 hemal hemal   472 Aug 20 14:21 201350890_practiceassign1_b.txt
+-rw-rw-r-- 1 hemal hemal     0 Aug 20 14:16 201350890_practiceassign1_c.script
+-rw-rw-r-- 1 hemal hemal     6 Aug 20 14:22 201350890_practiceassign1_c.txt
+-rw-rw-r-- 1 hemal hemal     7 Aug 20 14:22 201350890_practiceassign1_c.txt~
+drwxrwxr-x 3 hemal hemal  4096 Aug 20 14:05 [0m[01;34mcommandgame[0m
+-rw-r--r-- 1 hemal hemal     0 Aug 20 14:24 MyInfo.txt
+---xr----- 1 hemal hemal     0 Aug 20 14:26 [01;32mRunIt.txt[0m
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ t[Ktouch ReadMe.txt
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ chmod 440 ReadMe.txt 
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ ls -l
+total 56
+-rw-rw-r-- 1 hemal hemal  7621 Aug 20 12:01 201350890_practiceassign1_a.script
+-rw-rw-r-- 1 hemal hemal   315 Aug 20 13:00 201350890_practiceassign1_a.txt
+-rw-rw-r-- 1 hemal hemal   251 Aug 20 11:57 201350890_practiceassign1_a.txt~
+-rw-rw-r-- 1 hemal hemal 18574 Aug 20 14:13 201350890_practiceassign1_b.script
+-rw-rw-r-- 1 hemal hemal   472 Aug 20 14:21 201350890_practiceassign1_b.txt
+-rw-rw-r-- 1 hemal hemal     0 Aug 20 14:16 201350890_practiceassign1_c.script
+-rw-rw-r-- 1 hemal hemal     6 Aug 20 14:22 201350890_practiceassign1_c.txt
+-rw-rw-r-- 1 hemal hemal     7 Aug 20 14:22 201350890_practiceassign1_c.txt~
+drwxrwxr-x 3 hemal hemal  4096 Aug 20 14:05 [0m[01;34mcommandgame[0m
+-rw-r--r-- 1 hemal hemal     0 Aug 20 14:24 MyInfo.txt
+-r--r----- 1 hemal hemal     0 Aug 20 14:28 ReadMe.txt
+---xr----- 1 hemal hemal     0 Aug 20 14:26 [01;32mRunIt.txt[0m
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ touch WhatsTheUse.txt
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ chmod 000 WhatsTheUse.txt 
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ ls -l
+total 56
+-rw-rw-r-- 1 hemal hemal  7621 Aug 20 12:01 201350890_practiceassign1_a.script
+-rw-rw-r-- 1 hemal hemal   315 Aug 20 13:00 201350890_practiceassign1_a.txt
+-rw-rw-r-- 1 hemal hemal   251 Aug 20 11:57 201350890_practiceassign1_a.txt~
+-rw-rw-r-- 1 hemal hemal 18574 Aug 20 14:13 201350890_practiceassign1_b.script
+-rw-rw-r-- 1 hemal hemal   472 Aug 20 14:21 201350890_practiceassign1_b.txt
+-rw-rw-r-- 1 hemal hemal     0 Aug 20 14:16 201350890_practiceassign1_c.script
+-rw-rw-r-- 1 hemal hemal     6 Aug 20 14:22 201350890_practiceassign1_c.txt
+-rw-rw-r-- 1 hemal hemal     7 Aug 20 14:22 201350890_practiceassign1_c.txt~
+drwxrwxr-x 3 hemal hemal  4096 Aug 20 14:05 [0m[01;34mcommandgame[0m
+-rw-r--r-- 1 hemal hemal     0 Aug 20 14:24 MyInfo.txt
+-r--r----- 1 hemal hemal     0 Aug 20 14:28 ReadMe.txt
+---xr----- 1 hemal hemal     0 Aug 20 14:26 [01;32mRunIt.txt[0m
+---------- 1 hemal hemal     0 Aug 20 14:31 WhatsTheUse.txt
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ clear
+[H[2J]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ groupadd PG1_IIIH[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksudo -s
+[sudo] password for hemal: 
+]0;root@hemalPC: ~/scriptingroot@hemalPC:~/scripting# groupadd PG1_IIIH
+]0;root@hemalPC: ~/scriptingroot@hemalPC:~/scripting# grep PG1_IIIH /etc/group
+[01;31m[KPG1_IIIH[m[K:x:1001:
+]0;root@hemalPC: ~/scriptingroot@hemalPC:~/scripting# useradd user1
+]0;root@hemalPC: ~/scriptingroot@hemalPC:~/scripting# grep user1 /etc/grou[K[K[K[Kpasswd
+[01;31m[Kuser1[m[K:x:1001:1002::/home/[01;31m[Kuser1[m[K:
+]0;root@hemalPC: ~/scriptingroot@hemalPC:~/scripting# usermod -a -G PG1_IIIH user1 
+]0;root@hemalPC: ~/scriptingroot@hemalPC:~/scripting# grep PG1_IIIH /etc/group
+[01;31m[KPG1_IIIH[m[K:x:1001:user1
+]0;root@hemalPC: ~/scriptingroot@hemalPC:~/scripting# touch PG1_Info.txt
+]0;root@hemalPC: ~/scriptingroot@hemalPC:~/scripting# chmod 400[K[K[K[K[K[K[K[K[Kchmod go-rwx[K[K[K[K[K[K400 PG1_Info.txt 
+]0;root@hemalPC: ~/scriptingroot@hemalPC:~/scripting# ls -l
+total 60
+-rw-rw-r-- 1 hemal hemal  7621 Aug 20 12:01 201350890_practiceassign1_a.script
+-rw-rw-r-- 1 hemal hemal   315 Aug 20 13:00 201350890_practiceassign1_a.txt
+-rw-rw-r-- 1 hemal hemal   251 Aug 20 11:57 201350890_practiceassign1_a.txt~
+-rw-rw-r-- 1 hemal hemal 18574 Aug 20 14:13 201350890_practiceassign1_b.script
+-rw-rw-r-- 1 hemal hemal   472 Aug 20 14:21 201350890_practiceassign1_b.txt
+-rw-rw-r-- 1 hemal hemal  4096 Aug 20 14:42 201350890_practiceassign1_c.script
+-rw-rw-r-- 1 hemal hemal     6 Aug 20 14:22 201350890_practiceassign1_c.txt
+-rw-rw-r-- 1 hemal hemal     7 Aug 20 14:22 201350890_practiceassign1_c.txt~
+drwxrwxr-x 3 hemal hemal  4096 Aug 20 14:05 [0m[01;34mcommandgame[0m
+-rw-r--r-- 1 hemal hemal     0 Aug 20 14:24 MyInfo.txt
+-r-------- 1 root  root      0 Aug 20 14:46 PG1_Info.txt
+-r--r----- 1 hemal hemal     0 Aug 20 14:28 ReadMe.txt
+---xr----- 1 hemal hemal     0 Aug 20 14:26 [01;32mRunIt.txt[0m
+---------- 1 hemal hemal     0 Aug 20 14:31 WhatsTheUse.txt
+]0;root@hemalPC: ~/scriptingroot@hemalPC:~/scripting# clear
+[H[2J]0;root@hemalPC: ~/scriptingroot@hemalPC:~/scripting# chown PG_[K[K[K[K[K[K[K[K[Kman chown
+[?1049h[?1h=CHOWN(1)                         User Commands                        CHOWN(1)[m
+[m
+[1mNAME[0m[m
+       chown - change file owner and group[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mchown[0m [[4mOPTION[24m]... [[4mOWNER[24m][[4m:[24m[[4mGROUP[24m]] [4mFILE[24m...[m
+       [1mchown[0m [[4mOPTION[24m]... [4m--reference=RFILE[24m [4mFILE[24m...[m
+[m
+[1mDESCRIPTION[0m[m
+       This manual page documents the GNU version of [1mchown[0m.  [1mchown[0m changes the[m
+       user and/or group ownership of each given file.  If only  an  owner  (a[m
+       user  name or numeric user ID) is given, that user is made the owner of[m
+       each given file, and the files' group is not changed.  If the owner  is[m
+       followed  by  a  colon  and a group name (or numeric group ID), with no[m
+       spaces between them, the group ownership of the  files  is  changed  as[m
+       well.  If a colon but no group name follows the user name, that user is[m
+       made the owner of the files and the group of the files  is  changed  to[m
+       that  user's  login  group.   If the colon and group are given, but the[m
+       owner is omitted, only the group of the files is changed; in this case,[m
+       [1mchown[0m  performs  the same function as [1mchgrp[0m.  If only a colon is given,[m
+       or if the entire operand is empty, neither the owner nor the  group  is[m
+       changed.[m
+[7m Manual page chown(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l]0;root@hemalPC: ~/scriptingroot@hemalPC:~/scripting# chown us
+usbmux  user1   
+]0;root@hemalPC: ~/scriptingroot@hemalPC:~/scripting# chown user1 [K[K[K[K[K[K[K[K[K[K[K[Kls -l PG*
+-r-------- 1 root root 0 Aug 20 14:46 PG1_Info.txt
+]0;root@hemalPC: ~/scriptingroot@hemalPC:~/scripting# chow[K[K[K[Kexit
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ ls -l PG
+ls: cannot access PG: No such file or directory
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ ls -l PG*
+-r-------- 1 root root 0 Aug 20 14:46 PG1_Info.txt
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ sudo -s
+]0;root@hemalPC: ~/scriptingroot@hemalPC:~/scripting# rm PG1_Info.txt 
+]0;root@hemalPC: ~/scriptingroot@hemalPC:~/scripting# exit
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ touch PG1_Info.txt
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ ls -l PG*
+-rw-rw-r-- 1 hemal hemal 0 Aug 20 14:53 PG1_Info.txt
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ chown user1[K1 : u s e r 1 [C P G 1_Info.txt 
+chown: changing ownership of ‘PG1_Info.txt’: Operation not permitted
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ sudo -s
+]0;root@hemalPC: ~/scriptingroot@hemalPC:~/scripting# chown user1:user1 PG1_Info.txt 
+]0;root@hemalPC: ~/scriptingroot@hemalPC:~/scripting# ls -l P*
+-rw-rw-r-- 1 user1 user1 0 Aug 20 14:53 PG1_Info.txt
+]0;root@hemalPC: ~/scriptingroot@hemalPC:~/scripting# exit
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ clear
+[H[2J]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ vim PG1_Info.txt 
+[?1049h[?1h=[2;1H▽[6n[1;1H  [1;1H[1;24r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[24;1H"PG1_Info.txt" [readonly] 0L, 0C[>c[2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H0,0-1[9CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[24;1H[K[24;1H:[15;1H[7mPG1_Info.txt [RO]                                             0,0-1          All[m[16;1H[1m[34m:[m[33mx[m[16;3H[K[17;1H[1m[34m:[m[33mq[m[17;3H[K[18;1H[1m[34m:[m[33mwq[m[18;4H[K[19;1H[1m[34m:[m[19;2H[K[20;1H[1m[34m:
+:
+:[20;2H~
+:~
+:~[m
+[1m[7m[Command Line]                                                4,0-1          All[19;2H[?12l[?25h[?25l[m[24;1H[1mrecording[19;2H[?12l[?25h[?25l[m[24;1H[K[24;1H:[?12l[?25hq[?25l[?12l[?25h[?25l[15;1H[1m[34m~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~  
+~  
+~  
+~                                                                               [m[24;1H[1mrecording[m[53C0,0-1[9CAll[1;1H[?12l[?25h[?25l[24;1H[K[24;1H:[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l[24;1H[K[24;1H[?1l>[?12l[?25h[?1049l]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ ls -l P*
+-rw-rw-r-- 1 user1 user1 0 Aug 20 14:53 PG1_Info.txt
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ sudo -s
+]0;root@hemalPC: ~/scriptingroot@hemalPC:~/scripting# chmod 400 PG1_Info.txt 
+]0;root@hemalPC: ~/scriptingroot@hemalPC:~/scripting# exit
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ vim sudo -sls -l P*vim PG1_Info.txt 
+[?1049h[?1h=[2;1H▽[6n[1;1H  [1;1H[1;24r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[24;1H"PG1_Info.txt" [Permission Denied][>c[2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H0,0-1[9CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[24;1H[K[24;1H:[?12l[?25hq[?25l[?12l[?25h[?25l[24;1H[K[24;1H[?1l>[?12l[?25h[?1049l]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ ssh hemal.thakakr[K[K[Kkar@web.iiit,[K.ac.in
+The authenticity of host 'web.iiit.ac.in (14.139.82.8)' can't be established.
+RSA key fingerprint is 9b:7e:ce:70:bb:46:70:6e:80:4e:89:a7:68:b1:e2:72.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'web.iiit.ac.in,14.139.82.8' (RSA) to the list of known hosts.
+hemal.thakkar@web.iiit.ac.in's password: 
+]0;hemal.thakkar@web:~[?1034h[hemal.thakkar@web ~]$ touch 3.txt
+]0;hemal.thakkar@web:~[hemal.thakkar@web ~]$ rm tou[K[K[K3.txt 
+]0;hemal.thakkar@web:~[hemal.thakkar@web ~]$ vi 3.txt
+[?1049h[?1h=[1;24r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[24;1H"3.txt" [New File][>c[2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H0,0-1[9CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[24;1H[1m-- INSERT --[m[24;14H[K[24;63H0,1[11CAll[1;1H[?12l[?25h[?25l2[24;63H1,2[1;2H[?12l[?25h[?25l20[24;65H3[1;3H[?12l[?25h[?25l01[24;65H4[1;4H[?12l[?25h[?25l13[24;65H5[1;5H[?12l[?25h[?25l35[24;65H6[1;6H[?12l[?25h[?25l50[24;65H7[1;7H[?12l[?25h[?25l08[24;65H8[1;8H[?12l[?25h[?25l89[24;65H9[1;9H[?12l[?25h[?25l90[24;65H10[1;10H[?12l[?25h[24;1H[K[1;9H[?25l[24;63H1,9[11CAll[1;9H[?12l[?25h[?25l[24;63H[K[24;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"3.txt" [New] 1L, 10C written
+[?1l>[?12l[?25h[?1049l]0;hemal.thakkar@web:~[hemal.thakkar@web ~]$ cat 2[K3.`[Ktxt 
+201350890
+]0;hemal.thakkar@web:~[hemal.thakkar@web ~]$ logout
+Connection to web.iiit.ac.in closed.
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ scp hemal[K[K[K[K[Khemal.thakkar@web.iiit.ac.in:3.txt~3.txt[C[C[C[C/3.txt[C[C[C[C[C .
+hemal.thakkar@web.iiit.ac.in's password: 
+3.txt                                           0%    0     0.0KB/s   --:-- ETA3.txt                                         100%   10     0.0KB/s   00:01    
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ cat 3.txt 
+201350890
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ vim 3.txt 
+[?1049h[?1h=[2;1H▽[6n[1;1H  [1;1H[1;24r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[24;1H"3.txt" 1L, 10C[>c[1;1H201350890
+[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[24;65H2[1;2H[?12l[?25h[?25l[24;65H3[1;3H[?12l[?25h[?25l[24;65H4[1;4H[?12l[?25h[?25l[24;65H5[1;5H[?12l[?25h[?25l[24;65H6[1;6H[?12l[?25h[?25l[24;65H7[1;7H[?12l[?25h[?25l[24;65H8[1;8H[?12l[?25h[?25l[24;65H9[1;9H[?12l[?25h[?25l[24;1H[1m-- INSERT --[m[24;13H[K[24;63H1,9[11CAll[1;9H[?12l[?25h[?25l[24;65H10[1;10H[?12l[?25h[?25l[2;1H[K[24;63H2,1 [2;1H[?12l[?25h[?25lH[24;65H2[2;2H[?12l[?25h[?25le[24;65H3[2;3H[?12l[?25h[?25lm[24;65H4[2;4H[?12l[?25h[?25la[24;65H5[2;5H[?12l[?25h[?25ll[24;65H6[2;6H[?12l[?25h[?25l[24;65H7[2;7H[?12l[?25h[?25lN[24;65H8[2;8H[?12l[?25h[?25l.[24;65H9[2;9H[?12l[?25h[?25l[24;65H10[2;10H[?12l[?25h[?25lT[24;66H1[2;11H[?12l[?25h[?25lh[24;66H2[2;12H[?12l[?25h[?25la[24;66H3[2;13H[?12l[?25h[?25lk[24;66H4[2;14H[?12l[?25h[?25lk[24;66H5[2;15H[?12l[?25h[?25la[24;66H6[2;16H[?12l[?25h[?25lr[24;66H7[2;17H[?12l[?25h[24;1H[K[2;16H[?25l[24;63H2,16[10CAll[2;16H[?12l[?25h[?25l[24;63H[K[24;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"3.txt" 2L, 27C written
+[?1l>[?12l[?25h[?1049l]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ scp 3.txt hemal.thakkar@web.iiit.ac.in:~/
+hemal.thakkar@web.iiit.ac.in's password: 
+3.txt                                           0%    0     0.0KB/s   --:-- ETA3.txt                                         100%   27     0.0KB/s   00:00    
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ rm [K[K[Kgz[K[Kclear
+[H[2J]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ gzip 2013* 201350890_practiceassign1.tar.gz[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ktar -zcvf 201350890_pa[Kracticeassign1.tar.gz 2013*
+201350890_practiceassign1_a.script
+201350890_practiceassign1_a.txt
+201350890_practiceassign1_a.txt~
+201350890_practiceassign1_b.script
+201350890_practiceassign1_b.txt
+201350890_practiceassign1_c.script
+201350890_practiceassign1_c.txt
+201350890_practiceassign1_c.txt~
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ tar -zcvf 201350890_practiceassign1.tar.gz 2013*
+201350890_practiceassign1_a.script
+201350890_practiceassign1_a.txt
+201350890_practiceassign1_a.txt~
+201350890_practiceassign1_b.script
+201350890_practiceassign1_b.txt
+201350890_practiceassign1_c.script
+201350890_practiceassign1_c.txt
+201350890_practiceassign1_c.txt~
+201350890_practiceassign1.tar.gz
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ rm 201350890_practiceassign1.tar.gz
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ rm 201350890_practiceassign1.tar.gz[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C

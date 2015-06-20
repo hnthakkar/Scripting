@@ -1,0 +1,12 @@
+{{extend 'layout.html'}}
+<a class='btn' href={{=URL('index')}}><span class="icon leftarrow icon-arrow-left glyphicon glyphicon-arrow-left"></span><span class="buttontext button" title="Back">Back</span></a>
+{{=A('Post Comment',_class='btn',_href=URL('postComment',args=file_ID))}}
+<hr>
+{{for row in rows:}}
+<div class="well">
+    <p>
+        "<strong>{{=row.body}}</strong>"
+    </p>
+    {{=prettydate(row.created_on)}} by {{=author(row.created_by)}} 
+</div>
+{{pass}}

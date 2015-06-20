@@ -1,0 +1,248 @@
+Script started on Wednesday 20 August 2014 01:43:45 PM IST
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ touch sometext[K[K[K[K[K[K[K[Kcommandgame/sometext.txt
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ ls
+201350890_practiceassign1_a.script  201350890_practiceassign1_b.script
+201350890_practiceassign1_a.txt     201350890_practiceassign1_b.txt
+201350890_practiceassign1_a.txt~    [0m[01;34mcommandgame[0m
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ cd commandgame/
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ ls
+sometext.txt
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ vim sometext.txt 
+[?1049h[?1h=[2;1H▽[6n[1;1H  [1;1H[1;24r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[24;1H"sometext.txt" 0L, 0C[>c[2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H0,0-1[9CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[24;1H[1m-- INSERT --[m[24;13H[K[24;63H0,1[11CAll[1;1Hcripting and the Computer Environment CSE 505[24;63H1,46[1;46H[?12l[?25h[?25l[24;66H5[1;45H[?12l[?25h[?25l[24;66H4[1;44H[?12l[?25h[?25l[24;66H3[1;43H[?12l[?25h[?25l[24;66H2[1;42H[?12l[?25h[?25l[24;66H1[1;41H[?12l[?25h[?25l[24;66H0[1;40H[?12l[?25h[?25l[24;65H39[1;39H[?12l[?25h[?25l[24;66H8[1;38H[?12l[?25h[?25l[24;66H7[1;37H[?12l[?25h[?25l[24;66H6[1;36H[?12l[?25h[?25l[24;66H5[1;35H[?12l[?25h[?25l[24;66H4[1;34H[?12l[?25h[?25l[24;66H3[1;33H[?12l[?25h[?25l[24;66H2[1;32H[?12l[?25h[?25l[24;66H1[1;31H[?12l[?25h[?25l[24;66H0[1;30H[?12l[?25h[?25l[24;65H29[1;29H[?12l[?25h[?25l[24;66H8[1;28H[?12l[?25h[?25l[24;66H7[1;27H[?12l[?25h[?25l[24;66H6[1;26H[?12l[?25h[?25l[24;66H5[1;25H[?12l[?25h[?25l[24;66H4[1;24H[?12l[?25h[?25l[24;66H3[1;23H[?12l[?25h[?25l[24;66H2[1;22H[?12l[?25h[?25l[24;66H1[1;21H[?12l[?25h[?25l[24;66H0[1;20H[?12l[?25h[?25l[24;65H19[1;19H[?12l[?25h[?25l[24;66H8[1;18H[?12l[?25h[?25l[24;66H7[1;17H[?12l[?25h[?25l[24;66H6[1;16H[?12l[?25h[?25l[24;66H5[1;15H[?12l[?25h[?25l[24;66H4[1;14H[?12l[?25h[?25l[24;66H3[1;13H[?12l[?25h[?25l[24;66H2[1;12H[?12l[?25h[?25l[24;66H1[1;11H[?12l[?25h[?25l[24;66H0[1;10H[?12l[?25h[?25l[24;65H9 [1;9H[?12l[?25h[?25l[24;65H8[1;8H[?12l[?25h[?25l[24;65H7[1;7H[?12l[?25h[?25l[24;65H6[1;6H[?12l[?25h[?25l[24;65H5[1;5H[?12l[?25h[?25l[24;65H4[1;4H[?12l[?25h[?25l[24;65H3[1;3H[?12l[?25h[?25l[24;65H2[1;2H[?12l[?25h[?25l[24;65H1[1;1H[?12l[?25h[?25lScripting and the Computer Environment CSE 505[24;65H2[1;2H[?12l[?25h[?25l:cripting and the Computer Environment CSE 505[24;65H3[1;3H[?12l[?25h[?25l[34m^Z[mcripting and the Computer Environment CSE 505[24;65H4-5[1;5H[?12l[?25h[?25lcripting and the Computer Environment CSE 50[1;48H[K[24;65H3  [1;3H[?12l[?25h[?25lcripting and the Computer Environment CSE 505[1;47H[K[24;65H2[1;2H[?12l[?25h[24;1H[K[1;1H[?25l[24;63H1,1[11CAll[1;1H[?12l[?25h[?25l[24;63H[K[24;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"sometext.txt" 1L, 47C written
+[?1l>[?12l[?25h[?1049l]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ cat sometext.txt 
+Scripting and the Computer Environment CSE 505
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ mkdir copyversion
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ cp sometext.txt copyversion/
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ ls
+[0m[01;34mcopyversion[0m  sometext.txt
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ cd copyversion/
+]0;hemal@hemalPC: ~/scripting/commandgame/copyversionhemal@hemalPC:~/scripting/commandgame/copyversion$ ls
+sometext.txt
+]0;hemal@hemalPC: ~/scripting/commandgame/copyversionhemal@hemalPC:~/scripting/commandgame/copyversion$ cd..
+cd..: command not found
+]0;hemal@hemalPC: ~/scripting/commandgame/copyversionhemal@hemalPC:~/scripting/commandgame/copyversion$ cd ..
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ cd com[Kpyversion/
+]0;hemal@hemalPC: ~/scripting/commandgame/copyversionhemal@hemalPC:~/scripting/commandgame/copyversion$ clear
+[H[2J]0;hemal@hemalPC: ~/scripting/commandgame/copyversionhemal@hemalPC:~/scripting/commandgame/copyversion$ ls
+sometext.txt
+]0;hemal@hemalPC: ~/scripting/commandgame/copyversionhemal@hemalPC:~/scripting/commandgame/copyversion$ mkdir new [Klocation
+]0;hemal@hemalPC: ~/scripting/commandgame/copyversionhemal@hemalPC:~/scripting/commandgame/copyversion$ ls
+[0m[01;34mnewlocation[0m  sometext.txt
+]0;hemal@hemalPC: ~/scripting/commandgame/copyversionhemal@hemalPC:~/scripting/commandgame/copyversion$ mv sometext.txt newlocation/
+]0;hemal@hemalPC: ~/scripting/commandgame/copyversionhemal@hemalPC:~/scripting/commandgame/copyversion$ ls
+[0m[01;34mnewlocation[0m
+]0;hemal@hemalPC: ~/scripting/commandgame/copyversionhemal@hemalPC:~/scripting/commandgame/copyversion$ cd newlocation/
+]0;hemal@hemalPC: ~/scripting/commandgame/copyversion/newlocationhemal@hemalPC:~/scripting/commandgame/copyversion/newlocation$ ls
+sometext.txt
+]0;hemal@hemalPC: ~/scripting/commandgame/copyversion/newlocationhemal@hemalPC:~/scripting/commandgame/copyversion/newlocation$ ls
+sometext.txt
+]0;hemal@hemalPC: ~/scripting/commandgame/copyversion/newlocationhemal@hemalPC:~/scripting/commandgame/copyversion/newlocation$ mv sometext.txt s ometext_new.txt
+]0;hemal@hemalPC: ~/scripting/commandgame/copyversion/newlocationhemal@hemalPC:~/scripting/commandgame/copyversion/newlocation$ ls
+sometext_new.txt
+]0;hemal@hemalPC: ~/scripting/commandgame/copyversion/newlocationhemal@hemalPC:~/scripting/commandgame/copyversion/newlocation$ cat sometext_new.ttxt 
+Scripting and the Computer Environment CSE 505
+]0;hemal@hemalPC: ~/scripting/commandgame/copyversion/newlocationhemal@hemalPC:~/scripting/commandgame/copyversion/newlocation$ cd ..[K./..
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ clear
+[H[2J]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ touch counting.txt
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ fo [Kr i in {}1}.}.}2}5}[C; do
+> echo $i >> counting.txt 
+> done
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ cat counting.txt 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ more counting.txt 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+[7m--More--(90%)[27m24[K
+25
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ less counting.txt 
+[?1049h[?1h=1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+[7mcounting.txt[27m[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KESCESC[K:[K[K:[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[K24
+:[K[K [KESCESC[KOO[KBB[K25
+[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[HM2
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[K24
+:[K[K [KESCESC[KOO[KBB[K25
+[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KESCESC[K[7m(END)[27m[K[K[?1l>[?1049l]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ tail -15 counting.txt 
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ head -5 counting.txt 
+1
+2
+3
+4
+5
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ w[Kman wc
+[?1049h[?1h=WC(1)                            User Commands                           WC(1)[m
+[m
+[1mNAME[0m[m
+       wc - print newline, word, and byte counts for each file[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mwc[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+       [1mwc[0m [[4mOPTION[24m]... [4m--files0-from=F[24m[m
+[m
+[1mDESCRIPTION[0m[m
+       Print newline, word, and byte counts for each FILE, and a total line if[m
+       more than one FILE is specified.  With no FILE, or when FILE is -, read[m
+       standard  input.   A  word  is a non-zero-length sequence of characters[m
+       delimited by white space.  The options below  may  be  used  to  select[m
+       which counts are printed, always in the following order: newline, word,[m
+       character, byte, maximum line length.[m
+[m
+       [1m-c[0m, [1m--bytes[0m[m
+              print the byte counts[m
+[m
+       [1m-m[0m, [1m--chars[0m[m
+              print the character counts[m
+[m
+[7m Manual page wc(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-l[0m, [1m--lines[0m[m
+[7m Manual page wc(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              print the newline counts[m
+[7m Manual page wc(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wc(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--files0-from[0m=[4mF[24m[m
+[7m Manual page wc(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              read input from the files specified by NUL-terminated  names  in[m
+[7m Manual page wc(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              file F; If F is - then read names from standard input[m
+[7m Manual page wc(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wc(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-L[0m, [1m--max-line-length[0m[m
+[7m Manual page wc(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              print the length of the longest line[m
+[7m Manual page wc(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wc(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-w[0m, [1m--words[0m[m
+[7m Manual page wc(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              print the word counts[m
+[7m Manual page wc(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wc(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--help[0m display this help and exit[m
+[7m Manual page wc(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wc(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--version[0m[m
+[7m Manual page wc(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              output version information and exit[m
+[7m Manual page wc(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wc(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mAUTHOR[0m[m
+[7m Manual page wc(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Written by Paul Rubin and David MacKenzie.[m
+[7m Manual page wc(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wc(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mREPORTING[0m [1mBUGS[0m[m
+[7m Manual page wc(1) line 25 (press h for help or q to quit)[27m[K[K[?1l>[?1049l]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ wc -l counting.txt 
+25 counting.txt
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ man wc
+[?1049h[?1h=WC(1)                            User Commands                           WC(1)[m
+[m
+[1mNAME[0m[m
+       wc - print newline, word, and byte counts for each file[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mwc[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+       [1mwc[0m [[4mOPTION[24m]... [4m--files0-from=F[24m[m
+[m
+[1mDESCRIPTION[0m[m
+       Print newline, word, and byte counts for each FILE, and a total line if[m
+       more than one FILE is specified.  With no FILE, or when FILE is -, read[m
+       standard  input.   A  word  is a non-zero-length sequence of characters[m
+       delimited by white space.  The options below  may  be  used  to  select[m
+       which counts are printed, always in the following order: newline, word,[m
+       character, byte, maximum line length.[m
+[m
+       [1m-c[0m, [1m--bytes[0m[m
+              print the byte counts[m
+[m
+       [1m-m[0m, [1m--chars[0m[m
+              print the character counts[m
+[m
+[7m Manual page wc(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-l[0m, [1m--lines[0m[m
+[7m Manual page wc(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              print the newline counts[m
+[7m Manual page wc(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wc(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--files0-from[0m=[4mF[24m[m
+[7m Manual page wc(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              read input from the files specified by NUL-terminated  names  in[m
+[7m Manual page wc(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              file F; If F is - then read names from standard input[m
+[7m Manual page wc(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wc(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-L[0m, [1m--max-line-length[0m[m
+[7m Manual page wc(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              print the length of the longest line[m
+[7m Manual page wc(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wc(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-w[0m, [1m--words[0m[m
+[7m Manual page wc(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              print the word counts[m
+[7m Manual page wc(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wc(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--help[0m display this help and exit[m
+[7m Manual page wc(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wc(1) line 18 (press h for help or q to quit)[27m[K[K[?1l>[?1049l]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ wc -m counting.txt 
+66 counting.txt
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ wc -w counting.txt
+25 counting.txt
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ exit
+exit
+
+Script done on Wednesday 20 August 2014 02:13:52 PM IST

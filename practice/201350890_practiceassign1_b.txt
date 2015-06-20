@@ -1,0 +1,16 @@
+﻿1. touch sometext.txt; vim sometext.txt
+2. cat sometext.txt
+3. mkdir copyversion
+4. cp sometext.txt copyversion/
+5. mkdir newlocation; mv sometext.txt newlocation/
+6. mv sometext.txt sometext_new.txt
+7. cat sometext_new.txt
+8. touch counting.txt
+9. for i in {1..25}; do
+    > echo $i >> counting.txt
+    > done
+10. more counting.txt
+11. less counting.txt
+12. tail -15 counting.txt
+13. head -5 counting.txt
+14. wc -l counting.txt; wc -w counting.txt; wc -m counting.txt

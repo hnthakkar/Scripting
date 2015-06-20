@@ -1,0 +1,111 @@
+Script started on Saturday 06 September 2014 08:27:31 PM IST
+]0;athreyee@athreyee-Lenovo-G500: ~/Desktopathreyee@athreyee-Lenovo-G500:~/Desktop$ grep -E "^[^0-9]" data.txt
+[01;31m[KO[m[Kct. 16, 2014
+[01;31m[KI[m[Kndian High School
+[01;31m[KN[m[Kew Delhi, SA 92807-1281
+[01;31m[KB[m[Khashivk Shankar
+[01;31m[Ka[m[Ktoznosense@example.com
+[01;31m[KB[m[Krian Lara
+[01;31m[KS[m[Kep. 22, 2014
+[01;31m[KS[m[Konora High School
+[01;31m[KB[m[Kangalore, SCA 90631 
+[01;31m[KC[m[Karl Sana 
+[01;31m[KO[m[Kct. 1, 2014 
+[01;31m[KL[m[Kakewood High School
+[01;31m[KH[m[Kyderbad, SCA 90713-2013
+[01;31m[KA[m[Kndrea Jerremaiah
+[01;31m[KO[m[Kct. 8, 2014
+[01;31m[KS[m[Kt Petters High School
+[01;31m[KA[m[Khmedabbad, SCA 90504
+[01;31m[KD[m[Kon Joshephs
+[01;31m[KO[m[Kct. 15, 2014
+[01;31m[KE[m[KnVision High School
+[01;31m[KP[m[Kune, SCA 90631
+[01;31m[KS[m[Ktevenson Lucas
+[01;31m[Ks[m[Ktevenson_lucanson@example.com
+[01;31m[KN[m[Kov. 12, 2014
+[01;31m[KD[m[Kon Bosco High School
+[01;31m[KB[m[Kangalore, SCA 91770
+[01;31m[KH[m[Karidas Narayan
+[01;31m[Kh[m[Karidasnari@example.com
+]0;athreyee@athreyee-Lenovo-G500: ~/Desktopathreyee@athreyee-Lenovo-G500:~/Desktop$ grep -E -i "([a-z]{3})\. ([0-9]{1,2}),  ([0-9]{4})" data.txt
+[01;31m[KOct. 16, 2014[m[K
+[01;31m[KSep. 22, 2014[m[K
+[01;31m[KOct. 1, 2014[m[K 
+[01;31m[KOct. 8, 2014[m[K
+[01;31m[KOct. 15, 2014[m[K
+[01;31m[KNov. 12, 2014[m[K
+]0;athreyee@athreyee-Lenovo-G500: ~/Desktopathreyee@athreyee-Lenovo-G500:~/Desktop$ grep -E "([aeiou])([a-z]{2}\1)" data.tx t
+Bhashivk Sh[01;31m[Kanka[m[Kr
+at[01;31m[Kozno[m[Ks[01;31m[Kense[m[K@example.com
+401 Lal bagh Av[01;31m[Kenue[m[K
+B[01;31m[Kanga[m[Klore, SCA 90631 
+440 Jubilee H[01;31m[Killi[m[Ks .
+Andrea J[01;31m[Kerre[m[Kmaiah
+St P[01;31m[Kette[m[Krs High School
+Ahmed[01;31m[Kabba[m[Kd, SCA 90504
+1632 North Valencia Av[01;31m[Kenue[m[K
+Don B[01;31m[Kosco[m[K High School
+B[01;31m[Kanga[m[Klore, SCA 91770
+harid[01;31m[Kasna[m[Kri@example.com
+]0;athreyee@athreyee-Lenovo-G500: ~/Desktopathreyee@athreyee-Lenovo-G500:~/Desktop$ sed -e 's/\((...)\)\(...-\)\(....\)/Are a Code: \1 second: \2 third: \3/g' phone
+sed: can't read phone: No such file or directory
+]0;athreyee@athreyee-Lenovo-G500: ~/Desktopathreyee@athreyee-Lenovo-G500:~/Desktop$ sed -e 's/\((...)\)\(...-\)\(....\)/Areaa Code: \1 second: \2 third: \3/g' phone[C.txt
+Area Code: (021) second: 555- third: 1212
+Area Code: (010) second: 555- third: 1213
+Area Code: (020) second: 555- third: 1214
+Area Code: (010) second: 555- third: 1215
+Area Code: (080) second: 555- third: 1216
+Area Code: (040) second: 555- third: 1217
+
+]0;athreyee@athreyee-Lenovo-G500: ~/Desktopathreyee@athreyee-Lenovo-G500:~/Desktop$ sed '/<article>/,/<\/article>/d' xml_da ta.txt
+]0;athreyee@athreyee-Lenovo-G500: ~/Desktopathreyee@athreyee-Lenovo-G500:~/Desktop$ sed -e 's/<title>/Title/g; s/<\/title>/ /g' xml_data.txt
+<article>
+TitleAbout the Web
+
+<para>
+This is an article about the World Wide Web.
+The World Wide Web is a collection of documents that are linked to
+one another. The Web is <emphasis>not</emphasis> the same as the
+Internet. The Internet is a world-wide network of networks, and it
+does far more than simply serve up Web pages.
+</para>
+
+<para>Tim Berners-Lee, the inventor of the World Wide Web, put special
+emphasis on the portability of web pages. Rather than create a
+proprietary format, he made Web pages dependent only upon plain ASCII
+text.</para>
+
+<para>
+Web pages are written in a markup language called HTML. Here is what it
+looks like. The &lt; and &gt; mark off elements.
+</para>
+
+</article>
+]0;athreyee@athreyee-Lenovo-G500: ~/Desktopathreyee@athreyee-Lenovo-G500:~/Desktop$  sed -e 's/<para>/\\0/g; s/<\/para>/\\0 /g' xml_data.txt
+<article>
+<title>About the Web</title>
+
+\0
+This is an article about the World Wide Web.
+The World Wide Web is a collection of documents that are linked to
+one another. The Web is <emphasis>not</emphasis> the same as the
+Internet. The Internet is a world-wide network of networks, and it
+does far more than simply serve up Web pages.
+\0
+
+\0Tim Berners-Lee, the inventor of the World Wide Web, put special
+emphasis on the portability of web pages. Rather than create a
+proprietary format, he made Web pages dependent only upon plain ASCII
+text.\0
+
+\0
+Web pages are written in a markup language called HTML. Here is what it
+looks like. The &lt; and &gt; mark off elements.
+\0
+
+</article>
+]0;athreyee@athreyee-Lenovo-G500: ~/Desktopathreyee@athreyee-Lenovo-G500:~/Desktop$ scri[K[K[K[Kexit
+exit
+
+Script done on Saturday 06 September 2014 08:30:29 PM IST

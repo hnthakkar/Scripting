@@ -1,0 +1,113 @@
+Script started on Wednesday 20 August 2014 11:43:41 AM IST
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ eco[Kho ""H"e"l"l"o" "W"o"r"l"d"
+Hello World
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ mkdir commandgame
+]0;hemal@hemalPC: ~/scriptinghemal@hemalPC:~/scripting$ cd commandgame/
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ pwd
+/home/hemal/scripting/commandgame
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ touch firstfile.txt
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ touch .hidden
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ ls
+firstfile.txt
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ ls -l
+total 0
+-rw-rw-r-- 1 hemal hemal 0 Aug 20 11:50 firstfile.txt
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ ls -al
+total 8
+drwxrwxr-x 2 hemal hemal 4096 Aug 20 11:51 [0m[01;34m.[0m
+drwxrwxr-x 3 hemal hemal 4096 Aug 20 11:48 [01;34m..[0m
+-rw-rw-r-- 1 hemal hemal    0 Aug 20 11:50 firstfile.txt
+-rw-rw-r-- 1 hemal hemal    0 Aug 20 11:51 .hidden
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ mkdir -p grandparent/parent/child
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ commandgame[K[K[K[K[K[K[K[K[K[K[Kmkdir par[K[K[Kgrandparent/parent/sibling1 grandparent/parent/sibling2
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ tree 
+[01;34m.[00m
+|-- firstfile.txt
+`-- [01;34mgrandparent[00m
+    `-- [01;34mparent[00m
+        |-- [01;34mchild[00m
+        |-- [01;34msibling1[00m
+        `-- [01;34msibling2[00m
+
+5 directories, 1 file
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ tree -d
+[01;34m.[00m
+`-- [01;34mgrandparent[00m
+    `-- [01;34mparent[00m
+        |-- [01;34mchild[00m
+        |-- [01;34msibling1[00m
+        `-- [01;34msibling2[00m
+
+5 directories
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ tree[K[K[K[Kman tree
+[?1049h[?1h=TREE(1)                                                     General Commands Manual                                                     TREE(1)[m
+[m
+[1mNAME[0m[m
+       tree - list contents of directories in a tree-like format.[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mtree[0m  [[1m-acdfghilnpqrstuvxACDFQNSUX[0m]  [[1m-L[0m  [4mlevel[24m  [[1m-R[0m]]  [[1m-H[0m  [4mbaseHREF[24m]  [[1m-T[0m  [4mtitle[24m]  [[1m-o[0m [4mfilename[24m] [[1m--nolinks[0m] [[1m-P[0m [4mpattern[24m] [[1m-I[0m [4mpattern[24m][m
+       [[1m--inodes[0m] [[1m--device[0m] [[1m--noreport[0m] [[1m--dirsfirst[0m] [[1m--version[0m] [[1m--help[0m] [[1m--filelimit[0m [4m#[24m] [[1m--si[0m] [[1m--prune[0m] [[1m--du[0m] [[1m--timefmt[0m [4mformat[24m] [[4mdirec‐[24m[m
+       [4mtory[24m ...][m
+[m
+[1mDESCRIPTION[0m[m
+       [4mTree[24m  is  a recursive directory listing program that produces a depth indented listing of files, which is colorized ala [4mdircolors[24m if the[m
+       [1mLS_COLORS[0m environment variable is set and output is to tty.  With no arguments, [4mtree[24m lists the files in  the  current  directory.   When[m
+       directory arguments are given, [4mtree[24m lists all the files and/or directories found in the given directories each in turn.  Upon completion[m
+       of listing all files/directories found, [4mtree[24m returns the total number of files and/or directories listed.[m
+[m
+       By default, when a symbolic link is encountered, the path that the symbolic link refers to is printed after the name of the link in  the[m
+       format:[m
+[m
+           name -> real-path[m
+[m
+       If  the `[1m-l[0m' option is given and the symbolic link refers to an actual directory, then [4mtree[24m will follow the path of the symbolic link as[m
+       if it were a real directory.[m
+[m
+[1mOPTIONS[0m[m
+       [4mTree[24m understands the following command line switches:[m
+[m
+[1mLISTING[0m [1mOPTIONS[0m[m
+       [1m-a[0m     All files are printed.  By default tree does not print hidden files (those beginning with a dot `.').   In  no  event  does  tree[m
+              print the file system constructs `.' (current directory) and `..' (previous directory).[m
+[m
+       [1m-d[0m     List directories only.[m
+[m
+       [1m-l[0m     Follows  symbolic  links  if they point to directories, as if they were directories. Symbolic links that will result in recursion[m
+              are avoided when detected.[m
+[m
+       [1m-f[0m     Prints the full path prefix for each file.[m
+[m
+       [1m-x[0m     Stay on the current file-system only.  Ala [1mfind[0m [4m-xdev[24m[1m.[0m[m
+[m
+[7m Manual page tree(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-L[0m [4mlevel[24m[m
+[7m Manual page tree(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Max display depth of the directory tree.[m
+[7m Manual page tree(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tree(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-R[0m     Recursively cross down the tree each [4mlevel[24m directories (see [1m-L[0m option), and at  each  of  them  execute  [1mtree[0m  again  adding  `-o[m
+[7m Manual page tree(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              00Tree.html' as a new option.[m
+[7m Manual page tree(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tree(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-P[0m [4mpattern[24m[m
+[7m Manual page tree(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              List  only those files that match the wild-card [4mpattern[24m.  Note: you must use the [4m-a[24m option to also consider those files beginning[m
+[7m Manual page tree(1) line 11 (press h for help or q to quit)[27m[K[K [K::[Kqq[K[?1l>[?1049l]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ tree -a
+[01;34m.[00m
+|-- firstfile.txt
+|-- [01;34mgrandparent[00m
+|   `-- [01;34mparent[00m
+|       |-- [01;34mchild[00m
+|       |-- [01;34msibling1[00m
+|       `-- [01;34msibling2[00m
+`-- .hidden
+
+5 directories, 2 files
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ rm firstfile.txt 
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ rm .hidden 
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ rm -r grandparent/
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ ls -a;[Kl
+total 8
+drwxrwxr-x 2 hemal hemal 4096 Aug 20 12:00 [0m[01;34m.[0m
+drwxrwxr-x 3 hemal hemal 4096 Aug 20 11:57 [01;34m..[0m
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ ls
+]0;hemal@hemalPC: ~/scripting/commandgamehemal@hemalPC:~/scripting/commandgame$ exit
+exit
+
+Script done on Wednesday 20 August 2014 12:01:23 PM IST

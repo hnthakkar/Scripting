@@ -1,0 +1,8 @@
+﻿1. touch MyInfo.txt; chmod 644 MyInfo.txt; touch RunIt.txt; chmod 140 RunIt.txt; touch ReadMe.txt; chmod 440 ReadMe.txt; touch WhatsTheUse.txt; chmod 000  WhatsTheUse.txt;
+2. sudo -s; groupadd PG1_IIIH; useradd user1; usermod -a -G PG1_IIIH user1;
+    touch PG1_Info.txt; chmod 400 PG1_Info.txt; chmod user1:user1 PG1_Info.txt; vim PG1_Info.txt;
+3. ssh hemal.thakkar@web.iiit.ac.in; vi 3.txt;
+    scp hemal.thakkar@web.iiit.ac.in:~/3.txt .;
+    scp 3.txt hemal.thakkar@web.iiit.ac.in:~/
+4. tar -zcvf 201350890_practiceassign1.tar.gz 2013*
+  

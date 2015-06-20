@@ -1,0 +1,15 @@
+﻿1. echo “Hello World”
+2. mkdir commandgame
+3. cd commandgame/
+4. pwd
+5. touch firstfile.txt
+6. touch .hidden
+7. ls
+8. ls -l
+9. ls -al
+10. mkdir -p grandparent/parent/child
+11. mkdir grandparent/parent/sibling1 grandparent/parent/sibling2
+12. tree -a
+13. rm firstfile.txt
+14. rm .hidden
+15. rm -r grandparent

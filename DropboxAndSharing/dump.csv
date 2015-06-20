@@ -1,0 +1,326 @@
+TABLE auth_user
+auth_user.id,auth_user.first_name,auth_user.last_name,auth_user.email,auth_user.password,auth_user.registration_key,auth_user.reset_password_key,auth_user.registration_id
+1,user1,user1,user1@test.com,"pbkdf2(1000,20,sha512)$bc8e8f4fa1cdeac1$80a25366d1ce19db40966cbd758a236975ca27f9",,,
+2,test2,test2,a3@b.com,"pbkdf2(1000,20,sha512)$b03bf03b9f068b86$f853c458a9a8a660b7709a6bd7779fd1594a78a7",,,
+3,firstname,lastname,email@domain.com,"pbkdf2(1000,20,sha512)$b176c165554f4735$9b83b9bb044361c2a6036656a96acbbfa6bc8fa2",,,
+4,fname,lname,fname@lname.com,"pbkdf2(1000,20,sha512)$ac149bce3ab14ee5$d81c2210dcd203bf5214ae25dae4fe960f2b99d1",,,
+5,fname2,lname2,fname2@lname.com,"pbkdf2(1000,20,sha512)$b9e2d83e2cc2ea78$a26b72f131e969e22094aadaca4c7f56b44bfcad",,,
+6,hemal,Thakkar,hemal.thakkar@students.iiit.ac.in,"pbkdf2(1000,20,sha512)$986abbc618ff8e60$b167e8345a2cba552b584344aa15aa3cb0856db7",,,
+7,Hemal2,Thakkar2,thakkar_hemal@yahoo.com,"pbkdf2(1000,20,sha512)$bcfc6c1a3a6f7f84$7a7dd495b984ba24c8cbdec17ab294fdeb4220c5",9888c3a6-3b40-4427-ae48-aa643ca4d0f1,,https://me.yahoo.com/a/WS7BauQqyYPIqcR3q0caCafBslquRgdhhwQ-#a9576
+8,Hemal3,Thakkar3,thakkarhemal@gmail.com,"pbkdf2(1000,20,sha512)$aadce785f4f67342$00ea8135c70d04f8b67b540893fafef0d11e2510",e34499b3-1c81-43a2-9b41-3d2d542efd37,,
+9,Hemal6,Thakkar6,hthakkar.mob@gmail.com,"pbkdf2(1000,20,sha512)$88f6558f139b1878$293ae18e2b3dddc6d6c058bc29ede237e7201bf2",,,
+10,roop,gantala,roopkumar.gantala@adp.com,"pbkdf2(1000,20,sha512)$aa287a7b90de91d1$b3c024582b5ba20589e8b91bbd205cdb7fa44a16",,,
+11,mrinalini,j,mrinalinikrishna.jeedigunta@adp.com,"pbkdf2(1000,20,sha512)$b10ad159fe87ceed$62ed04985ccf3d33204c188affd531be8e2108d5",,,
+12,Siddharth,Indurthi,siddhart.indurthi@adp.com,"pbkdf2(1000,20,sha512)$a917ebac67fce6a8$6c836350264632bf05abfb15598af9d11cb84a32",,,
+13,veera,pallati,veera.pallati@adp.com,"pbkdf2(1000,20,sha512)$8132c13a02677232$a03c0cf000459498f646c2d57502d0befe0c48b5",,,
+14,Ruturaj,Dhekane,ruturajmd@yahoo.co.in,<NULL>,,,https://me.yahoo.com/a/3FeGI_w3zec9lJj2ILkwc7SfklNsFg--#cae7f
+15,,,testdropboxuser1@yahoo.com,<NULL>,,,https://me.yahoo.com/a/TzTBn2F_k_.ITRffNUsQgftXGHssY8x4QSRMoH4-#3e780
+16,{u'formatted': u'TestUser TestUser'},{u'formatted': u'TestUser TestUser'},testdropboxuser2@yahoo.in,<NULL>,,,https://me.yahoo.com/a/yoYwIBsUsOfHs51hik2xexJsoDcU820Aa25n0Ak-#52178
+18,TestDropbox User,,testdropboxuser3@yahoo.in,<NULL>,,,https://me.yahoo.com/a/G89F7c8I3csRL5T3b7kZ04WhrbceAlCJr_4dXac-#6f1af
+
+
+TABLE auth_group
+auth_group.id,auth_group.role,auth_group.description
+1,user_1,Group uniquely assigned to user 1
+2,user_2,Group uniquely assigned to user 2
+3,user_3,Group uniquely assigned to user 3
+4,user_4,Group uniquely assigned to user 4
+5,user_5,Group uniquely assigned to user 5
+6,user_6,Group uniquely assigned to user 6
+7,user_7,Group uniquely assigned to user 7
+8,user_8,Group uniquely assigned to user 8
+9,user_9,Group uniquely assigned to user 9
+10,user_10,Group uniquely assigned to user 10
+11,user_11,Group uniquely assigned to user 11
+12,user_12,Group uniquely assigned to user 12
+13,user_13,Group uniquely assigned to user 13
+14,user_14,
+15,user_15,
+16,user_16,
+17,user_17,
+18,user_18,
+
+
+TABLE auth_membership
+auth_membership.id,auth_membership.user_id,auth_membership.group_id
+1,1,1
+2,2,2
+3,3,3
+4,4,4
+5,5,5
+6,6,6
+7,7,7
+8,8,8
+9,9,9
+10,10,10
+11,11,11
+12,12,12
+13,13,13
+14,14,14
+15,15,15
+16,16,16
+18,18,18
+
+
+TABLE auth_permission
+
+
+TABLE auth_event
+auth_event.id,auth_event.time_stamp,auth_event.client_ip,auth_event.user_id,auth_event.origin,auth_event.description
+1,2014-11-10 14:50:24,127.0.0.1,<NULL>,auth,Group 1 created
+2,2014-11-10 14:50:24,127.0.0.1,1,auth,User 1 Registered
+3,2014-11-11 17:56:57,127.0.0.1,<NULL>,auth,Group 2 created
+4,2014-11-11 17:56:57,127.0.0.1,2,auth,User 2 Registered
+5,2014-11-11 18:50:32,127.0.0.1,2,auth,User 2 Logged-out
+6,2014-11-11 18:50:32,127.0.0.1,2,auth,User 2 Logged-out
+7,2014-11-11 18:57:39,127.0.0.1,<NULL>,auth,Group 3 created
+8,2014-11-11 18:57:39,127.0.0.1,3,auth,User 3 Registered
+9,2014-11-11 19:48:04,127.0.0.1,3,auth,User 3 Logged-out
+10,2014-11-11 19:51:40,127.0.0.1,3,auth,User 3 Logged-in
+11,2014-11-11 20:40:06,127.0.0.1,3,auth,User 3 Logged-out
+12,2014-11-11 20:40:06,127.0.0.1,3,auth,User 3 Logged-out
+13,2014-11-11 20:41:04,127.0.0.1,3,auth,User 3 Logged-in
+14,2014-11-11 20:55:43,127.0.0.1,3,auth,User 3 Logged-out
+15,2014-11-11 20:55:44,127.0.0.1,3,auth,User 3 Logged-out
+16,2014-11-11 20:56:20,127.0.0.1,3,auth,User 3 Logged-in
+17,2014-11-12 16:59:46,127.0.0.1,<NULL>,auth,Group 4 created
+18,2014-11-12 16:59:46,127.0.0.1,4,auth,User 4 Registered
+19,2014-11-12 17:18:59,127.0.0.1,4,auth,User 4 Logged-out
+20,2014-11-12 17:18:59,127.0.0.1,4,auth,User 4 Logged-out
+21,2014-11-12 17:19:36,127.0.0.1,<NULL>,auth,Group 5 created
+22,2014-11-12 17:19:36,127.0.0.1,5,auth,User 5 Registered
+23,2014-11-12 18:07:11,127.0.0.1,5,auth,User 5 Logged-out
+24,2014-11-12 18:07:28,127.0.0.1,4,auth,User 4 Logged-in
+25,2014-11-12 18:08:35,127.0.0.1,4,auth,User 4 Logged-out
+26,2014-11-12 18:08:35,127.0.0.1,4,auth,User 4 Logged-out
+27,2014-11-12 18:08:54,127.0.0.1,5,auth,User 5 Logged-in
+28,2014-11-12 18:09:48,127.0.0.1,5,auth,User 5 Logged-out
+29,2014-11-12 18:09:48,127.0.0.1,5,auth,User 5 Logged-out
+30,2014-11-12 18:10:32,127.0.0.1,4,auth,User 4 Logged-in
+31,2014-11-13 02:47:26,127.0.0.1,4,auth,User 4 Logged-out
+32,2014-11-13 02:47:26,127.0.0.1,4,auth,User 4 Logged-out
+33,2014-11-13 02:47:45,127.0.0.1,5,auth,User 5 Logged-in
+34,2014-11-13 15:20:23,127.0.0.1,5,auth,User 5 Logged-out
+35,2014-11-13 15:20:23,127.0.0.1,5,auth,User 5 Logged-out
+36,2014-11-13 15:20:44,127.0.0.1,4,auth,User 4 Logged-in
+37,2014-11-13 16:13:28,127.0.0.1,4,auth,User 4 Logged-out
+38,2014-11-13 16:13:28,127.0.0.1,4,auth,User 4 Logged-out
+39,2014-11-13 16:13:44,127.0.0.1,5,auth,User 5 Logged-in
+40,2014-11-13 16:16:30,127.0.0.1,5,auth,User 5 Logged-out
+41,2014-11-13 16:16:30,127.0.0.1,5,auth,User 5 Logged-out
+42,2014-11-13 16:16:44,127.0.0.1,4,auth,User 4 Logged-in
+43,2014-11-13 16:17:04,127.0.0.1,4,auth,User 4 Logged-out
+44,2014-11-13 16:17:04,127.0.0.1,4,auth,User 4 Logged-out
+45,2014-11-13 16:17:18,127.0.0.1,5,auth,User 5 Logged-in
+46,2014-11-13 16:18:14,127.0.0.1,5,auth,User 5 Logged-out
+47,2014-11-13 16:18:14,127.0.0.1,5,auth,User 5 Logged-out
+48,2014-11-13 16:24:51,127.0.0.1,4,auth,User 4 Logged-in
+49,2014-11-13 16:25:21,127.0.0.1,4,auth,User 4 Logged-out
+50,2014-11-13 16:25:21,127.0.0.1,4,auth,User 4 Logged-out
+51,2014-11-13 16:25:37,127.0.0.1,5,auth,User 5 Logged-in
+52,2014-11-13 16:26:14,127.0.0.1,5,auth,User 5 Logged-out
+53,2014-11-13 16:26:14,127.0.0.1,5,auth,User 5 Logged-out
+54,2014-11-13 16:26:26,127.0.0.1,4,auth,User 4 Logged-in
+55,2014-11-13 21:39:30,127.0.0.1,4,auth,User 4 Logged-out
+56,2014-11-13 21:39:30,127.0.0.1,4,auth,User 4 Logged-out
+57,2014-11-13 21:40:01,127.0.0.1,<NULL>,auth,Group 6 created
+58,2014-11-13 21:40:01,127.0.0.1,6,auth,User 6 Registered
+59,2014-11-13 21:40:16,127.0.0.1,6,auth,User 6 Logged-out
+60,2014-11-13 21:40:16,127.0.0.1,6,auth,User 6 Logged-out
+61,2014-11-13 21:40:31,127.0.0.1,4,auth,User 4 Logged-in
+62,2014-11-13 22:26:26,127.0.0.1,4,auth,User 4 Logged-out
+63,2014-11-13 22:26:26,127.0.0.1,4,auth,User 4 Logged-out
+64,2014-11-13 22:27:00,127.0.0.1,<NULL>,auth,Group 7 created
+65,2014-11-13 22:27:00,127.0.0.1,<NULL>,auth,User 7 Registered
+66,2014-11-13 22:30:22,127.0.0.1,<NULL>,auth,Group 8 created
+67,2014-11-13 22:30:22,127.0.0.1,<NULL>,auth,User 8 Registered
+68,2014-11-13 22:38:42,127.0.0.1,<NULL>,auth,Group 9 created
+69,2014-11-13 22:38:42,127.0.0.1,9,auth,User 9 Registered
+70,2014-11-13 22:38:50,127.0.0.1,9,auth,User 9 Logged-out
+71,2014-11-13 22:38:50,127.0.0.1,9,auth,User 9 Logged-out
+72,2014-11-13 22:39:05,127.0.0.1,4,auth,User 4 Logged-in
+73,2014-11-14 12:10:35,127.0.0.1,4,auth,User 4 Logged-out
+74,2014-11-14 12:10:35,127.0.0.1,4,auth,User 4 Logged-out
+75,2014-11-14 12:12:54,127.0.0.1,4,auth,User 4 Logged-in
+76,2014-11-14 12:15:04,127.0.0.1,4,auth,User 4 Logged-out
+77,2014-11-14 12:15:04,127.0.0.1,4,auth,User 4 Logged-out
+78,2014-11-14 12:15:39,127.0.0.1,6,auth,User 6 Logged-in
+79,2014-11-14 12:16:13,127.0.0.1,6,auth,User 6 Logged-out
+80,2014-11-14 12:16:13,127.0.0.1,6,auth,User 6 Logged-out
+81,2014-11-14 12:32:45,127.0.0.1,<NULL>,auth,Group 10 created
+82,2014-11-14 12:32:45,127.0.0.1,10,auth,User 10 Registered
+83,2014-11-14 12:34:24,127.0.0.1,10,auth,User 10 Logged-out
+84,2014-11-14 12:34:24,127.0.0.1,10,auth,User 10 Logged-out
+85,2014-11-14 12:34:42,127.0.0.1,6,auth,User 6 Logged-in
+86,2014-11-14 12:36:44,127.0.0.1,6,auth,User 6 Logged-out
+87,2014-11-14 12:36:44,127.0.0.1,6,auth,User 6 Logged-out
+88,2014-11-14 20:30:16,127.0.0.1,4,auth,User 4 Logged-in
+89,2014-11-16 11:58:11,127.0.0.1,4,auth,User 4 Logged-out
+90,2014-11-16 11:58:11,127.0.0.1,4,auth,User 4 Logged-out
+91,2014-11-16 12:09:20,127.0.0.1,4,auth,User 4 Logged-in
+92,2014-11-16 12:15:44,127.0.0.1,4,auth,User 4 Logged-out
+93,2014-11-16 12:15:44,127.0.0.1,4,auth,User 4 Logged-out
+94,2014-11-16 12:16:03,127.0.0.1,4,auth,User 4 Logged-in
+95,2014-11-16 19:28:48,127.0.0.1,4,auth,User 4 Logged-out
+96,2014-11-16 19:28:48,127.0.0.1,4,auth,User 4 Logged-out
+97,2014-11-16 19:31:24,127.0.0.1,4,auth,User 4 Logged-in
+98,2014-11-17 12:05:08,127.0.0.1,4,auth,User 4 Logged-out
+99,2014-11-17 12:05:08,127.0.0.1,4,auth,User 4 Logged-out
+100,2014-11-17 12:06:16,127.0.0.1,<NULL>,auth,Group 11 created
+101,2014-11-17 12:06:16,127.0.0.1,11,auth,User 11 Registered
+102,2014-11-17 12:08:20,127.0.0.1,11,auth,User 11 Logged-out
+103,2014-11-17 12:08:20,127.0.0.1,11,auth,User 11 Logged-out
+104,2014-11-17 12:08:37,127.0.0.1,6,auth,User 6 Logged-in
+105,2014-11-17 12:10:59,127.0.0.1,6,auth,User 6 Logged-out
+106,2014-11-17 12:10:59,127.0.0.1,6,auth,User 6 Logged-out
+107,2014-11-17 12:14:55,127.0.0.1,11,auth,User 11 Logged-in
+108,2014-11-17 12:36:26,127.0.0.1,11,auth,User 11 Logged-out
+109,2014-11-17 12:36:26,127.0.0.1,11,auth,User 11 Logged-out
+110,2014-11-17 15:36:09,127.0.0.1,4,auth,User 4 Logged-in
+111,2014-11-17 16:24:19,127.0.0.1,4,auth,User 4 Logged-out
+112,2014-11-17 16:24:19,127.0.0.1,4,auth,User 4 Logged-out
+113,2014-11-17 16:25:24,127.0.0.1,<NULL>,auth,Group 12 created
+114,2014-11-17 16:25:24,127.0.0.1,12,auth,User 12 Registered
+115,2014-11-17 16:58:33,127.0.0.1,12,auth,User 12 Logged-out
+116,2014-11-17 16:58:33,127.0.0.1,12,auth,User 12 Logged-out
+117,2014-11-17 16:59:08,127.0.0.1,<NULL>,auth,Group 13 created
+118,2014-11-17 16:59:08,127.0.0.1,13,auth,User 13 Registered
+119,2014-11-17 17:01:53,127.0.0.1,13,auth,User 13 Logged-out
+120,2014-11-17 17:01:53,127.0.0.1,13,auth,User 13 Logged-out
+121,2014-11-17 17:02:15,127.0.0.1,6,auth,User 6 Logged-in
+122,2014-11-17 17:09:39,127.0.0.1,6,auth,User 6 Logged-out
+123,2014-11-17 17:09:39,127.0.0.1,6,auth,User 6 Logged-out
+124,2014-11-17 17:10:12,127.0.0.1,6,auth,User 6 Logged-in
+125,2014-11-17 17:12:02,127.0.0.1,6,auth,User 6 Logged-out
+126,2014-11-17 17:12:02,127.0.0.1,6,auth,User 6 Logged-out
+127,2014-11-17 19:18:19,127.0.0.1,4,auth,User 4 Logged-in
+128,2014-11-18 10:21:20,127.0.0.1,4,auth,User 4 Logged-out
+129,2014-11-18 10:21:20,127.0.0.1,4,auth,User 4 Logged-out
+130,2014-11-18 10:36:39,127.0.0.1,7,auth,User 7 Logged-in
+131,2014-11-18 10:37:16,127.0.0.1,7,auth,User 7 Logged-out
+132,2014-11-18 10:37:16,127.0.0.1,7,auth,User 7 Logged-out
+133,2014-11-18 10:37:26,127.0.0.1,7,auth,User 7 Logged-in
+134,2014-11-18 10:37:30,127.0.0.1,7,auth,User 7 Logged-out
+135,2014-11-18 10:37:30,127.0.0.1,7,auth,User 7 Logged-out
+136,2014-11-18 10:38:02,127.0.0.1,<NULL>,auth,Group 14 created
+137,2014-11-18 10:38:02,127.0.0.1,14,auth,User 14 Logged-in
+138,2014-11-18 10:38:24,127.0.0.1,14,auth,User 14 Profile updated
+139,2014-11-18 11:33:48,127.0.0.1,14,auth,User 14 Logged-out
+140,2014-11-18 11:33:48,127.0.0.1,14,auth,User 14 Logged-out
+141,2014-11-18 11:35:16,127.0.0.1,<NULL>,auth,Group 15 created
+142,2014-11-18 11:35:16,127.0.0.1,15,auth,User 15 Logged-in
+143,2014-11-18 11:45:01,127.0.0.1,15,auth,User 15 Logged-out
+144,2014-11-18 11:45:01,127.0.0.1,15,auth,User 15 Logged-out
+145,2014-11-18 12:20:16,127.0.0.1,15,auth,User 15 Logged-in
+146,2014-11-18 12:20:58,127.0.0.1,15,auth,User 15 Logged-out
+147,2014-11-18 12:20:58,127.0.0.1,15,auth,User 15 Logged-out
+148,2014-11-18 12:22:19,127.0.0.1,<NULL>,auth,Group 16 created
+149,2014-11-18 12:22:19,127.0.0.1,16,auth,User 16 Logged-in
+150,2014-11-18 12:32:49,127.0.0.1,16,auth,User 16 Logged-out
+151,2014-11-18 12:40:16,127.0.0.1,16,auth,User 16 Logged-in
+152,2014-11-18 12:40:26,127.0.0.1,16,auth,User 16 Logged-out
+153,2014-11-18 12:40:26,127.0.0.1,16,auth,User 16 Logged-out
+154,2014-11-18 12:45:19,127.0.0.1,16,auth,User 16 Logged-in
+155,2014-11-18 12:46:45,127.0.0.1,16,auth,User 16 Logged-out
+156,2014-11-18 12:46:45,127.0.0.1,16,auth,User 16 Logged-out
+157,2014-11-18 12:47:18,127.0.0.1,<NULL>,auth,Group 17 created
+159,2014-11-18 13:05:28,127.0.0.1,<NULL>,auth,Group 18 created
+160,2014-11-18 13:05:28,127.0.0.1,18,auth,User 18 Logged-in
+161,2014-11-18 13:06:07,127.0.0.1,18,auth,User 18 Logged-out
+162,2014-11-18 13:06:07,127.0.0.1,18,auth,User 18 Logged-out
+163,2014-11-18 15:54:06,127.0.0.1,18,auth,User 18 Logged-in
+164,2014-11-18 15:59:03,127.0.0.1,18,auth,User 18 Logged-out
+165,2014-11-18 15:59:03,127.0.0.1,18,auth,User 18 Logged-out
+166,2014-11-18 16:40:01,127.0.0.1,18,auth,User 18 Logged-in
+167,2014-11-18 16:54:31,127.0.0.1,18,auth,User 18 Logged-out
+168,2014-11-18 16:54:32,127.0.0.1,18,auth,User 18 Logged-out
+169,2014-11-18 17:02:06,127.0.0.1,15,auth,User 15 Logged-in
+170,2014-11-18 17:03:36,127.0.0.1,15,auth,User 15 Logged-out
+171,2014-11-18 17:03:36,127.0.0.1,15,auth,User 15 Logged-out
+172,2014-11-18 17:03:59,127.0.0.1,15,auth,User 15 Logged-in
+173,2014-11-18 17:04:08,127.0.0.1,15,auth,User 15 Logged-out
+174,2014-11-18 17:04:08,127.0.0.1,15,auth,User 15 Logged-out
+175,2014-11-18 17:05:06,127.0.0.1,18,auth,User 18 Logged-in
+
+
+TABLE auth_cas
+
+
+TABLE alluploads
+alluploads.id,alluploads.filename,alluploads.uploadfile,alluploads.description,alluploads.datecreated,alluploads.datemodified,alluploads.uploadedBy
+8,user2 file1,alluploads.uploadfile.a1bbc7fc04c6f5c4.66696c6561.txt,,2014-11-12 18:09:32,2014-11-12 18:09:32,5
+9,zip,alluploads.uploadfile.8f4dbaee91061b1a.7765623270795f7372632e7a6970.zip,try zip,2014-11-13 15:05:20,2014-11-13 15:05:20,5
+10,other test,alluploads.uploadfile.a488623db3ce737c.7765623270795f6d616e75616c5f3574682e706466.pdf,test,2014-11-13 15:09:48,2014-11-13 15:09:48,5
+13,text,alluploads.uploadfile.a6a12da51849a241.7265616c6e756d6265722e747874.txt,hii,2014-11-14 12:33:11,2014-11-14 12:33:11,10
+14,que,alluploads.uploadfile.92c887f5d99d0cb5.717565315f66696c65.txt,sed,2014-11-14 12:35:16,2014-11-14 12:35:16,6
+26,test1,alluploads.uploadfile.af96e6649ed9902a.4c616220322041737369676e6d656e742e706466.pdf,test1,2014-11-17 00:43:08,2014-11-17 00:43:08,4
+28,test3,alluploads.uploadfile.91057ffe621ec907.7265616c6e756d6265722e747874.txt,test3,2014-11-17 00:45:16,2014-11-17 00:45:16,4
+29,test,alluploads.uploadfile.97ac513629970f54.4c616220322041737369676e6d656e742e706466.pdf,test,2014-11-17 12:06:42,2014-11-17 12:06:42,11
+30,text file,alluploads.uploadfile.97d425e5a7de19a6.7265616c6e756d6265722e747874.txt,test,2014-11-17 12:21:29,2014-11-17 12:21:29,11
+31,ergre,alluploads.uploadfile.9902b430ffae886f.73747564656e746e616d6573.txt,egrever,2014-11-17 12:30:37,2014-11-17 12:30:37,11
+32,Lab 2 assg,alluploads.uploadfile.9744cc73162a8647.4c616220322041737369676e6d656e742e706466.pdf,x,2014-11-17 16:25:46,2014-11-17 16:25:46,12
+33,jhkjhh,alluploads.uploadfile.a3694ae828a8f61c.7265616c6e756d6265722e747874.txt,kjhkjh,2014-11-17 16:59:48,2014-11-17 16:59:48,13
+34,MOVIE TEST,alluploads.uploadfile.9a5cb03498994f60.456c656d656e746172792e5330324530312e484454562e783236342d4c4f4c2e6d7034.mp4,MOVIE DESC,2014-11-17 17:10:44,2014-11-17 17:10:44,6
+36,TestFile1,alluploads.uploadfile.852ecb579c56efc8.3230313335303839305f707261637469636561737369676e315f612e747874.txt,Test File 1 Desc,2014-11-18 16:40:54,2014-11-18 16:40:54,18
+37,Test File2,alluploads.uploadfile.bd4f3f550dae2faf.526561644d652e747874.txt,Test FIle 2 Desc,2014-11-18 16:41:36,2014-11-18 16:41:36,18
+38,test FIle 3,alluploads.uploadfile.83b1d44ca2b42327.746573742e747874.txt,test file 3 desc,2014-11-18 16:44:49,2014-11-18 16:44:49,18
+39,test file 4,alluploads.uploadfile.a78717a0cbc148f7.746573742e747874.txt,test file 4,2014-11-18 16:45:53,2014-11-18 16:45:53,18
+40,file 5,alluploads.uploadfile.95139dcb71aa2f31.746573742e747874.txt,test5,2014-11-18 16:46:54,2014-11-18 16:46:54,18
+41,file 6,alluploads.uploadfile.997cac481cb94bcf.3230313335303839305f707261637469636561737369676e315f632e736372697074.txt,file 6,2014-11-18 16:47:25,2014-11-18 16:47:25,18
+42,test file1 other user,alluploads.uploadfile.a87200ea77dcd821.746573742e747874.txt,test file1 other user,2014-11-18 17:02:52,2014-11-18 17:02:52,15
+
+
+TABLE sharedFiles
+sharedFiles.id,sharedFiles.fileID,sharedFiles.sharedWith
+2,<NULL>,5
+4,10,4
+5,9,4
+26,13,6
+27,14,10
+29,29,6
+30,14,11
+31,33,6
+32,28,6
+34,42,18
+
+
+TABLE bookmark
+bookmark.id,bookmark.fileID,bookmark.userID,bookmark.bookmarkdate
+1,<NULL>,4,2014-11-16 12:51:06
+6,9,4,2014-11-16 13:20:59
+9,10,4,2014-11-16 20:38:02
+18,28,4,2014-11-17 00:47:00
+19,29,11,2014-11-17 12:06:56
+20,14,6,2014-11-17 12:09:48
+21,31,11,2014-11-17 12:30:51
+22,31,11,2014-11-17 12:30:55
+23,31,11,2014-11-17 12:32:04
+24,31,11,2014-11-17 12:32:17
+25,26,4,2014-11-17 15:46:44
+26,32,12,2014-11-17 16:26:24
+27,33,13,2014-11-17 17:01:06
+29,39,18,2014-11-18 16:53:26
+30,38,18,2014-11-18 16:53:27
+
+
+TABLE comments
+comments.id,comments.fileID,comments.userID,comments.body,comments.commentdate
+1,<NULL>,<NULL>,first comment,<NULL>
+2,28,4,some comment,2014-11-17 01:35:38
+3,28,4,second,2014-11-17 02:06:02
+4,28,4,czdvfsdvsd,2014-11-17 02:14:42
+5,14,6,sdgsdhsfh,2014-11-17 12:09:21
+6,30,11,test,2014-11-17 12:29:57
+7,28,4,latest comment,2014-11-17 15:36:43
+8,32,12,hnhinhu,2014-11-17 16:33:58
+9,32,12,bhbuhb u,2014-11-17 16:34:11
+10,14,6,fgbfdbfdbdf,2014-11-17 17:02:50
+11,37,18,Test post comment 1 for file1,2014-11-18 16:43:32
+12,37,18,Test comment 2,2014-11-18 16:43:53
+13,37,18,Test comment 3,2014-11-18 16:44:08
+14,41,18,Test comment 1,2014-11-18 17:25:17
+15,41,18,test comment 2,2014-11-18 17:25:27
+16,41,18,test comment 3,2014-11-18 17:25:36
+
+
+END

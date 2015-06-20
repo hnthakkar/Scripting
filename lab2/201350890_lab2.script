@@ -1,0 +1,63 @@
+Script started on Tuesday 02 September 2014 03:19:50 PM IST
+]0;hemal@hemalPC: ~/scriptingLab2/201350890_lab2hemal@hemalPC:~/scriptingLab2/201350890_lab2$ cd ..
+]0;hemal@hemalPC: ~/scriptingLab2hemal@hemalPC:~/scriptingLab2$ [K]0;hemal@hemalPC: ~/scriptingLab2hemal@hemalPC:~/scriptingLab2$ [H[2J]0;hemal@hemalPC: ~/scriptingLab2hemal@hemalPC:~/scriptingLab2$ grep -e "hey" -e "hello" que1_file
+[01;31m[Khey[m[K!!!!!
+ulljalul[01;31m[Khello[m[Kkuchbhi[01;31m[Khey[m[K
+[01;31m[Khey[m[K[01;31m[Khello[m[K
+[01;31m[Khey[m[Kyyyy
+]0;hemal@hemalPC: ~/scriptingLab2hemal@hemalPC:~/scriptingLab2$ egrep "^l(o){1,2}(k|(s)|(ing)|(ed))" que1_file
+[01;31m[Klook[m[K
+[01;31m[Klook[m[K,looks,looking,looked,booked,booking,books,book
+]0;hemal@hemalPC: ~/scriptingLab2hemal@hemalPC:~/scriptingLab2$ egrep "(^19)([0-9])([0-9]$)|(^20)([0-9])([0-9]$)" que1_file 
+[01;31m[K2010[m[K
+[01;31m[K1910[m[K
+]0;hemal@hemalPC: ~/scriptingLab2hemal@hemalPC:~/scriptingLab2$ egrep -i "*ag{1,2}((ar|ra))(wal)$" studentnames | cut -d' ' -f1
+Gaurav
+SHALKI
+MEHAK
+LAMHA
+Ayush
+Saurabh
+Akash
+]0;hemal@hemalPC: ~/scriptingLab2hemal@hemalPC:~/scriptingLab2$ ls -l | grep "^d"
+[01;31m[Kd[m[Krwxrwxr-x 2 hemal hemal  4096 Aug 30 14:23 201350890_lab2
+[01;31m[Kd[m[Krwxrwxr-x 3 hemal hemal  4096 Aug 30 14:19 new
+]0;hemal@hemalPC: ~/scriptingLab2hemal@hemalPC:~/scriptingLab2$ ls -l|grep "^-...rw-"
+[01;31m[K-rw-rw-[m[Kr-- 1 hemal hemal   884 Sep  2 15:19 201350890_lab1.txt
+[01;31m[K-rw-rw-[m[Kr-- 1 hemal hemal   884 Sep  2 15:19 201350890_lab1.txt~
+[01;31m[K-rw-rw-[m[Kr-- 1 hemal hemal 43051 Aug 29 16:29 Lab 2 Assignment.pdf
+[01;31m[K-rw-rw-[m[Kr-- 1 hemal hemal   846 Aug 29 16:27 que1_file
+[01;31m[K-rw-rw-[m[Kr-- 1 hemal hemal   123 Aug 29 15:59 realnumber.txt
+[01;31m[K-rw-rw-[m[Kr-- 1 hemal hemal  1574 Aug 29 15:57 studentnames
+]0;hemal@hemalPC: ~/scriptingLab2hemal@hemalPC:~/scriptingLab2$ echo AB98 |awk '{if(length($0)==3) print $0 }' | egrep '^([A-Z]|[0-9]|a)[x,z]$'
+]0;hemal@hemalPC: ~/scriptingLab2hemal@hemalPC:~/scriptingLab2$ echo AB98 |awk '{if(length($0)==3) print $0 }' | egrep '^([A-Z]|[0-9]|a)[x,z]$'
+]0;hemal@hemalPC: ~/scriptingLab2hemal@hemalPC:~/scriptingLab2$ echo hiiamthellonumber6|awk '{if((length($0)>=15)&&(length($0)<=30)) print $0 }' | egrep '^.{6}hello'
+[01;31m[Khiiamthello[m[Knumber6
+]0;hemal@hemalPC: ~/scriptingLab2hemal@hemalPC:~/scriptingLab2$ echo hahahahahoho | egrep -w '(h[a,o]){5,}'
+[01;31m[Khahahahahoho[m[K
+]0;hemal@hemalPC: ~/scriptingLab2hemal@hemalPC:~/scriptingLab2$ egrep -x '([+,-]?)([0-9]*\.?[0-9]+)' realnumber.txt
+[01;31m[K12.5[m[K
+[01;31m[K11.9[m[K
+[01;31m[K111[m[K
+[01;31m[K+11[m[K
+[01;31m[K-1.25[m[K
+[01;31m[K1112.33[m[K
+[01;31m[K-1333[m[K
+[01;31m[K-122.333[m[K
+[01;31m[K-1343.45[m[K
+[01;31m[K+12.222[m[K
+]0;hemal@hemalPC: ~/scriptingLab2hemal@hemalPC:~/scriptingLab2$ egrep '^([0-9a-z]+(([.,_,-]?)[a-z0-9]+)*)@([0-9a-z]+(([.,-]?)[a-z0-9]+)*)\.[a-z]+' email
+egrep: email: No such file or directory
+]0;hemal@hemalPC: ~/scriptingLab2hemal@hemalPC:~/scriptingLab2$ cd new/Lab2/
+]0;hemal@hemalPC: ~/scriptingLab2/new/Lab2hemal@hemalPC:~/scriptingLab2/new/Lab2$ [H[2J]0;hemal@hemalPC: ~/scriptingLab2/new/Lab2hemal@hemalPC:~/scriptingLab2/new/Lab2$ grep -e "hey" -e "hello" que1_file
+[01;31m[Khey[m[K!!!!!
+ulljalul[01;31m[Khello[m[Kkuchbhi[01;31m[Khey[m[K
+[01;31m[Khey[m[K[01;31m[Khello[m[K
+[01;31m[Khey[m[Kyyyy
+]0;hemal@hemalPC: ~/scriptingLab2/new/Lab2hemal@hemalPC:~/scriptingLab2/new/Lab2$ egrep "^l(o){1,2}(k|(s)|(ing)|(ed))" que1_file
+[01;31m[Klook[m[K
+[01;31m[Klook[m[K,looks,looking,looked,booked,booking,books,book
+]0;hemal@hemalPC: ~/scriptingLab2/new/Lab2hemal@hemalPC:~/scriptingLab2/new/Lab2$ egrep "(^19)([0-9])([0-9]$)|(^20)([0-9])([0-9]$)" que1_file 
+[01;31m[K2010[m[K
+[01;31m[K1910[m[K
+]0;hemal@hemalPC: ~/scriptingLab2/new/Lab2hemal@hemalPC:~/scriptingLab2/new/Lab2$ egrep -i "*ag{1,2}((ar|ra))(wa

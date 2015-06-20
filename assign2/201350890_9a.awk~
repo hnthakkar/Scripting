@@ -1,0 +1,5 @@
+
+#!/usr/bin/awk -f
+{
+if(NR!=2 || NR!=3 || NR!=4)print;
+}

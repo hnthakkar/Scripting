@@ -1,0 +1,68 @@
+1.
+1 exluding  numbers by using '^[^0-9]'
+2 specifying the range of 3 characters, 2 digits and 4 digits 
+3 using the range valdiation and regex matching 
+
+
+2.
+having the validation for max of 255
+((([0-1]?[0-9]{,2})|([2][0-5]{,2}))\.){3}(([0-1]?[0-9]{,2})|([2][0-5]{,2}))+)
+
+
+3.
+
+
+1)specifying {4,}- zeros should be atleast 4 
+
+2) ^([0]*(11)*[0]*)*$-
+and even length of string and All strings of 0's and 1's where 1's in required sequence
+
+3) [A-Za-z]*[a,e,i,o,u,A,E,I,O,U]+[a-zA-Z]*
+
+included a,e,i,o,u,A,E,I,O,U] -atleast one vowel
+
+
+4.
+o maximum value -7
+d contains 0-9
+h-alphabets a-f and numbers
+
+
+
+5. used cat grep, tr with sed and in few cases one can be substituted for other
+
+
+
+6.split into substrings and then regex match
+
+7. Finding out the regex for comments and replacing them with null
+
+8. a.articla tag is matched with regex and removed
+b.replacing only the first letter with capital T
+c.replacing all the para tags using sed /g
+
+
+9.
+
+a. deleting the lines from 2 (removed will be 2 ,3,4) using sed
+b.escaping and then printing
+c.escaping and replace the comments
+
+
+
+10.using the gp to replace globally
+
+
+11.mathcing regex with starting zero and replacing
+
+
+12.replacing after every 3 rd row with new line
+
+13.
+a.(F-32)*5/9=c
+b.
+recursively adding previous values
+
+
+
+

@@ -1,0 +1,1 @@
+awk 'BEGIN {FS=",";print "\n Student report \n\nS.No\tRollNumber\tName\tGrade\tRating"}{ if($3>8) rating="Outstanding"; else if(($3>7)&&($3<9)) rating = "Good"; else if($3<=7) rating = "Average"; print NR"\t"$1"\t"$2"\t"$3"\t"rating} END {print "\n END OF REPORT-\n"}' StudentMarks.txt
